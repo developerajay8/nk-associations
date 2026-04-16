@@ -118,11 +118,11 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="tel:+917568820015"
+                href="#contact"
                 className="flex items-center gap-2 bg-[#3773b6] hover:bg-[#2a5a99] text-white font-bold px-7 py-3.5 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
                 <Phone size={17} />
-                Call Now: 7568820015
+                Contact Us
               </a>
               <a
                 href="#services"

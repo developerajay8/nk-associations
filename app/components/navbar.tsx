@@ -7,7 +7,6 @@ const navLinks = [
   { label: "Home", href: "#" },
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Pricing", href: "#pricing" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -41,12 +40,12 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <a
-            href="tel:+917568820015"
-            className="hidden md:flex items-center gap-2 bg-[#3773b6] hover:bg-[#2a5a99] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg"
-          >
-            <Phone size={15} />
-            Call Us Now
-          </a>
+  href="#contact"
+  className="hidden md:flex items-center gap-2 bg-[#3773b6] hover:bg-[#2a5a99] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg"
+>
+  <Phone size={15} />
+  Contact Us
+</a>
 
           {/* Mobile Hamburger */}
           <button
@@ -73,12 +72,12 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="tel:+917568820015"
-            className="flex items-center gap-2 bg-[#3773b6] text-white text-sm font-semibold px-5 py-2.5 rounded-full w-fit mt-2"
-          >
-            <Phone size={15} />
-            Call Us Now
-          </a>
+  href="#contact"
+  className="hidden md:flex items-center gap-2 bg-[#3773b6] hover:bg-[#2a5a99] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg"
+>
+  <Phone size={15} />
+  Contact Us
+</a>
         </div>
       )}
     </header>

@@ -11,7 +11,7 @@ import TestimonialsSection from "./components/testimonialssection";
 import BlogSection from "./components/blogsection";
 import ContactForm from "./components/contactform";
 import { CTASection, Footer } from "./components/ctaandfooter";
-import StickyButtons from "./components/stickybuttons";
+// import StickyButtons from "./components/stickybuttons";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
       <ContactForm/>
       {/* <CTASection/> */}
       <Footer/>
-      <StickyButtons/>
+      {/* <StickyButtons/> */}
 
     </div>
   );

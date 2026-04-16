@@ -158,12 +158,7 @@ export default function BlogSection() {
           ))}
         </div>
 
-        {/* View All */}
-        <div className={`mt-10 text-center transition-all duration-700 delay-400 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <button className="inline-flex items-center gap-2 border-2 border-[#3773b6] text-[#3773b6] font-bold px-8 py-3.5 rounded-xl text-sm hover:bg-[#3773b6] hover:text-white transition-all duration-200">
-            Saare Articles Dekho <ArrowRight size={14} />
-          </button>
-        </div>
+        
       </div>
     </section>
   );
