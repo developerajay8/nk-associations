@@ -75,20 +75,19 @@ export default function ServicesSection() {
   const active = serviceCategories[activeTab];
 
   return (
-    <section id="services" className="bg-[#f8fafd] py-24 px-4">
+    <section id="services" className="bg-white py-24 px-4">
       <div ref={ref} className="max-w-7xl mx-auto">
 
         {/* Section Header */}
         <div className={`text-center mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <span className="inline-block bg-[#1a74bb]/10 text-[#1a74bb] text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-4">
+          <span className="inline-block bg-[#3773b6]/10 text-[#3773b6] text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-4">
             Our Services
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-[#231f20] leading-tight mb-4"
-            style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl md:text-5xl font-black text-[#232021] leading-tight mb-4">
             Comprehensive Tax & <br className="hidden sm:block" />
-            <span className="text-[#1a74bb]">Compliance Solutions</span>
+            <span className="text-[#3773b6]">Compliance Solutions</span>
           </h2>
-          <p className="text-[#231f20]/60 text-lg max-w-xl mx-auto">
+          <p className="text-[#232021]/60 text-lg max-w-xl mx-auto">
             Apni zaroorat ke hisaab se package choose karein. Transparent pricing, koi hidden charges nahi.
           </p>
         </div>
@@ -101,8 +100,8 @@ export default function ServicesSection() {
               onClick={() => setActiveTab(i)}
               className={`flex items-center gap-2.5 px-5 py-3 rounded-2xl font-semibold text-sm transition-all duration-300 border ${
                 activeTab === i
-                  ? "bg-[#1a74bb] text-white border-[#1a74bb] shadow-lg shadow-[#1a74bb]/30 -translate-y-0.5"
-                  : "bg-white text-[#231f20]/70 border-[#1a74bb]/15 hover:border-[#1a74bb]/40 hover:text-[#1a74bb] hover:-translate-y-0.5"
+                  ? "bg-[#3773b6] text-white border-[#3773b6] shadow-lg shadow-[#3773b6]/30 -translate-y-0.5"
+                  : "bg-white text-[#232021]/70 border-[#3773b6]/15 hover:border-[#3773b6]/40 hover:text-[#3773b6] hover:-translate-y-0.5"
               }`}
             >
               {cat.icon}
@@ -113,9 +112,9 @@ export default function ServicesSection() {
 
         {/* Active Category Info */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 text-[#231f20]/60 text-sm">
+          <div className="inline-flex items-center gap-2 text-[#232021]/60 text-sm">
             {active.icon}
-            <span className="font-semibold text-[#1a74bb]">{active.label}</span>
+            <span className="font-semibold text-[#3773b6]">{active.label}</span>
             <span>—</span>
             <span>{active.subtitle}</span>
           </div>
@@ -128,14 +127,14 @@ export default function ServicesSection() {
               key={pkg.name}
               className={`relative rounded-3xl p-6 transition-all duration-300 hover:-translate-y-2 cursor-pointer group ${
                 pkg.popular
-                  ? "bg-gradient-to-br from-[#1a74bb] to-[#0d5a96] shadow-2xl shadow-[#1a74bb]/40 border-0"
-                  : "bg-white border border-[#1a74bb]/10 hover:border-[#1a74bb]/30 shadow-sm hover:shadow-xl hover:shadow-[#1a74bb]/10"
+                  ? "bg-gradient-to-br from-[#3773b6] to-[#2a5a99] shadow-2xl shadow-[#3773b6]/40 border-0"
+                  : "bg-white border border-[#3773b6]/10 hover:border-[#3773b6]/30 shadow-sm hover:shadow-xl hover:shadow-[#3773b6]/10"
               }`}
               style={{ animationDelay: `${i * 100}ms` }}
             >
               {pkg.popular && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                  <span className="bg-[#231f20] text-white text-[10px] font-black tracking-widest uppercase px-4 py-1.5 rounded-full shadow-lg">
+                  <span className="bg-[#232021] text-white text-[10px] font-black tracking-widest uppercase px-4 py-1.5 rounded-full shadow-lg">
                     ⭐ Most Popular
                   </span>
                 </div>
@@ -144,31 +143,30 @@ export default function ServicesSection() {
               {/* Package Name */}
               <div className="mb-1">
                 <span className={`text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full ${
-                  pkg.popular ? "bg-white/15 text-white/80" : "bg-[#1a74bb]/8 text-[#1a74bb]"
+                  pkg.popular ? "bg-white/15 text-white/80" : "bg-[#3773b6]/8 text-[#3773b6]"
                 }`}>
                   {pkg.name}
                 </span>
               </div>
 
               {/* Price */}
-              <p className={`text-2xl font-black mt-3 mb-5 leading-tight ${pkg.popular ? "text-white" : "text-[#231f20]"}`}
-                style={{ fontFamily: "'Playfair Display', serif" }}>
+              <p className={`text-2xl font-black mt-3 mb-5 leading-tight ${pkg.popular ? "text-white" : "text-[#232021]"}`}>
                 {pkg.price}
               </p>
 
               {/* Divider */}
-              <div className={`h-px mb-5 ${pkg.popular ? "bg-white/15" : "bg-[#1a74bb]/8"}`} />
+              <div className={`h-px mb-5 ${pkg.popular ? "bg-white/15" : "bg-[#3773b6]/8"}`} />
 
               {/* Features */}
               <ul className="space-y-3 mb-7">
                 {pkg.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
                     <span className={`mt-0.5 w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center ${
-                      pkg.popular ? "bg-white/20 text-white" : "bg-[#1a74bb]/10 text-[#1a74bb]"
+                      pkg.popular ? "bg-white/20 text-white" : "bg-[#3773b6]/10 text-[#3773b6]"
                     }`}>
                       <Check size={10} />
                     </span>
-                    <span className={`text-sm leading-snug ${pkg.popular ? "text-white/85" : "text-[#231f20]/70"}`}>{f}</span>
+                    <span className={`text-sm leading-snug ${pkg.popular ? "text-white/85" : "text-[#232021]/70"}`}>{f}</span>
                   </li>
                 ))}
               </ul>
@@ -178,8 +176,8 @@ export default function ServicesSection() {
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                 className={`w-full py-3 rounded-xl font-bold text-sm tracking-wide transition-all duration-200 ${
                   pkg.popular
-                    ? "bg-white text-[#1a74bb] hover:bg-white/90 shadow-lg shadow-black/10"
-                    : "bg-[#1a74bb] text-white hover:bg-[#0d5a96] shadow-md shadow-[#1a74bb]/20"
+                    ? "bg-white text-[#3773b6] hover:bg-white/90 shadow-lg shadow-black/10"
+                    : "bg-[#3773b6] text-white hover:bg-[#2a5a99] shadow-md shadow-[#3773b6]/20"
                 }`}
               >
                 Get Started →
@@ -190,10 +188,10 @@ export default function ServicesSection() {
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
-          <p className="text-[#231f20]/50 text-sm mb-4">Koi confusion hai? Humse baat karein — bilkul free!</p>
+          <p className="text-[#232021]/50 text-sm mb-4">Koi confusion hai? Humse baat karein — bilkul free!</p>
           <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="inline-flex items-center gap-2 border-2 border-[#1a74bb] text-[#1a74bb] font-bold px-8 py-3 rounded-xl text-sm hover:bg-[#1a74bb] hover:text-white transition-all duration-200"
+            className="inline-flex items-center gap-2 border-2 border-[#3773b6] text-[#3773b6] font-bold px-8 py-3 rounded-xl text-sm hover:bg-[#3773b6] hover:text-white transition-all duration-200"
           >
             Book Free Consultation →
           </button>

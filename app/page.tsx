@@ -7,10 +7,10 @@ import WhyChooseUs from "./components/whychooseus";
 import AboutUs from "./components/aboutus";
 import ProcessSection from "./components/processsection";
 import TestimonialsSection from "./components/testimonialssection";
-import FAQSection from "./components/faqsection";
+// import FAQSection from "./components/faqsection";
 import BlogSection from "./components/blogsection";
 import ContactForm from "./components/contactform";
-import { CTASection } from "./components/ctaandfooter";
+import { CTASection, Footer } from "./components/ctaandfooter";
 import StickyButtons from "./components/stickybuttons";
 
 export default function Home() {
@@ -24,10 +24,11 @@ export default function Home() {
       <AboutUs/>
       <ProcessSection/>
       <TestimonialsSection/>
-      <FAQSection/>
+      {/* <FAQSection/> */}
       <BlogSection/>
       <ContactForm/>
-      <CTASection/>
+      {/* <CTASection/> */}
+      <Footer/>
       <StickyButtons/>
 
     </div>

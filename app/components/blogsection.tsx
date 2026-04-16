@@ -6,7 +6,7 @@ import { FileText, Receipt, Building, DollarSign, Monitor, BarChart3, Calendar, 
 const blogs = [
   {
     cat: "Income Tax",
-    catColor: "#1a74bb",
+    catColor: "#3773b6",
     title: "ITR Filing 2024-25: Kya Naya Hai Is Saal?",
     excerpt: "Is saal ke ITR filing mein kya badlav aaye hain, konsa form bharna hai, aur aap kaise maximum tax bachaa sakte hain — poori guide.",
     date: "Apr 10, 2025",
@@ -46,7 +46,7 @@ const blogs = [
   },
   {
     cat: "Income Tax",
-    catColor: "#1a74bb",
+    catColor: "#3773b6",
     title: "Freelancers ke liye Income Tax: Poori Jankari",
     excerpt: "Freelance income ka tax kaise calculate hota hai, advance tax, professional tax — sab kuch ek comprehensive article mein.",
     date: "Feb 20, 2025",
@@ -81,22 +81,21 @@ export default function BlogSection() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="blog" className="bg-[#f8fafd] py-24 px-4">
+    <section id="blog" className="bg-white py-24 px-4">
       <div ref={ref} className="max-w-7xl mx-auto">
 
         {/* Header */}
         <div className={`flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <div>
-            <span className="inline-block bg-[#1a74bb]/10 text-[#1a74bb] text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-4">
+            <span className="inline-block bg-[#3773b6]/10 text-[#3773b6] text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-4">
               Blog & Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-[#231f20] leading-tight"
-              style={{ fontFamily: "'Playfair Display', serif" }}>
+            <h2 className="text-4xl md:text-5xl font-black text-[#232021] leading-tight">
               Tax & Finance Ka <br />
-              <span className="text-[#1a74bb]">Asaan Gyaan</span>
+              <span className="text-[#3773b6]">Asaan Gyaan</span>
             </h2>
           </div>
-          <p className="text-[#231f20]/55 text-base max-w-xs md:text-right">
+          <p className="text-[#232021]/55 text-base max-w-xs md:text-right">
             Jargon-free, simple Hindi mein tax aur finance ki latest jankari
           </p>
         </div>
@@ -106,7 +105,7 @@ export default function BlogSection() {
           {blogs.map((post, i) => (
             <article
               key={post.title}
-              className={`group bg-white rounded-3xl overflow-hidden border border-[#1a74bb]/8 hover:border-[#1a74bb]/25 hover:shadow-xl hover:shadow-[#1a74bb]/8 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`group bg-white rounded-3xl overflow-hidden border border-[#3773b6]/8 hover:border-[#3773b6]/25 hover:shadow-xl hover:shadow-[#3773b6]/8 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer flex flex-col ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${i * 70}ms` }}
             >
               {/* Card Top */}
@@ -131,16 +130,15 @@ export default function BlogSection() {
               </div>
 
               {/* Content */}
-              <div className="p-6 pt-3">
-                <h3 className="font-black text-[#231f20] text-base leading-snug mb-3 group-hover:text-[#1a74bb] transition-colors duration-200"
-                  style={{ fontFamily: "'Playfair Display', serif" }}>
+              <div className="p-6 pt-3 flex-1 flex flex-col">
+                <h3 className="font-black text-[#232021] text-base leading-snug mb-3 group-hover:text-[#3773b6] transition-colors duration-200">
                   {post.title}
                 </h3>
-                <p className="text-[#231f20]/55 text-sm leading-relaxed mb-5">{post.excerpt}</p>
+                <p className="text-[#232021]/55 text-sm leading-relaxed mb-5">{post.excerpt}</p>
 
                 {/* Meta */}
-                <div className="flex items-center justify-between pt-4 border-t border-[#1a74bb]/8">
-                  <div className="flex items-center gap-3 text-[#231f20]/40 text-xs">
+                <div className="mt-auto flex items-center justify-between pt-4 border-t border-[#3773b6]/8">
+                  <div className="flex items-center gap-3 text-[#232021]/40 text-xs">
                     <div className="flex items-center gap-1">
                       <Calendar size={12} />
                       <span>{post.date}</span>
@@ -151,7 +149,7 @@ export default function BlogSection() {
                       <span>{post.read} read</span>
                     </div>
                   </div>
-                  <span className="flex items-center gap-1 text-[#1a74bb] text-xs font-bold group-hover:translate-x-1 transition-transform duration-200">
+                  <span className="flex items-center gap-1 text-[#3773b6] text-xs font-bold group-hover:translate-x-1 transition-transform duration-200">
                     Read <ArrowRight size={12} />
                   </span>
                 </div>
@@ -162,7 +160,7 @@ export default function BlogSection() {
 
         {/* View All */}
         <div className={`mt-10 text-center transition-all duration-700 delay-400 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <button className="inline-flex items-center gap-2 border-2 border-[#1a74bb] text-[#1a74bb] font-bold px-8 py-3.5 rounded-xl text-sm hover:bg-[#1a74bb] hover:text-white transition-all duration-200">
+          <button className="inline-flex items-center gap-2 border-2 border-[#3773b6] text-[#3773b6] font-bold px-8 py-3.5 rounded-xl text-sm hover:bg-[#3773b6] hover:text-white transition-all duration-200">
             Saare Articles Dekho <ArrowRight size={14} />
           </button>
         </div>

@@ -35,15 +35,14 @@ export default function FAQSection() {
 
         {/* Header */}
         <div className={`text-center mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <span className="inline-block bg-[#1a74bb]/10 text-[#1a74bb] text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-4">
+          <span className="inline-block bg-[#3773b6]/10 text-[#3773b6] text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-4">
             FAQ
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-[#231f20] leading-tight mb-4"
-            style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl md:text-5xl font-black text-[#232021] leading-tight mb-4">
             Aksar Puche Jaane Wale <br />
-            <span className="text-[#1a74bb]">Sawaal</span>
+            <span className="text-[#3773b6]">Sawaal</span>
           </h2>
-          <p className="text-[#231f20]/55 text-lg max-w-md mx-auto">
+          <p className="text-[#232021]/55 text-lg max-w-md mx-auto">
             Nahi mila jawab? Hum seedha WhatsApp ya call pe bhi bata denge!
           </p>
         </div>
@@ -55,8 +54,8 @@ export default function FAQSection() {
               key={i}
               className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                 open === i
-                  ? "border-[#1a74bb]/40 shadow-lg shadow-[#1a74bb]/8"
-                  : "border-[#1a74bb]/10 hover:border-[#1a74bb]/25"
+                  ? "border-[#3773b6]/40 shadow-lg shadow-[#3773b6]/8"
+                  : "border-[#3773b6]/10 hover:border-[#3773b6]/25"
               } ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${i * 50}ms` }}
             >
@@ -67,18 +66,18 @@ export default function FAQSection() {
               >
                 <div className="flex items-start gap-4">
                   <span className={`flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-black transition-colors duration-200 ${
-                    open === i ? "bg-[#1a74bb] text-white" : "bg-[#1a74bb]/10 text-[#1a74bb]"
+                    open === i ? "bg-[#3773b6] text-white" : "bg-[#3773b6]/10 text-[#3773b6]"
                   }`}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className={`font-semibold text-base transition-colors duration-200 ${open === i ? "text-[#1a74bb]" : "text-[#231f20] group-hover:text-[#1a74bb]"}`}>
+                  <span className={`font-semibold text-base transition-colors duration-200 ${open === i ? "text-[#3773b6]" : "text-[#232021] group-hover:text-[#3773b6]"}`}>
                     {faq.q}
                   </span>
                 </div>
                 <span className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center text-sm font-bold transition-all duration-300 ${
                   open === i
-                    ? "border-[#1a74bb] text-[#1a74bb]"
-                    : "border-[#231f20]/20 text-[#231f20]/40"
+                    ? "border-[#3773b6] text-[#3773b6]"
+                    : "border-[#232021]/20 text-[#232021]/40"
                 }`}>
                   {open === i ? <Minus size={14} /> : <Plus size={14} />}
                 </span>
@@ -88,7 +87,7 @@ export default function FAQSection() {
               <div className={`overflow-hidden transition-all duration-400 ${open === i ? "max-h-60" : "max-h-0"}`}
                 style={{ maxHeight: open === i ? 240 : 0 }}>
                 <div className="px-6 pb-6 pl-[4.25rem]">
-                  <p className="text-[#231f20]/65 text-sm leading-relaxed">{faq.a}</p>
+                  <p className="text-[#232021]/65 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               </div>
             </div>
@@ -96,12 +95,12 @@ export default function FAQSection() {
         </div>
 
         {/* Still Have Questions */}
-        <div className={`mt-12 bg-gradient-to-r from-[#1a74bb]/8 to-[#1a74bb]/4 border border-[#1a74bb]/15 rounded-3xl p-8 text-center transition-all duration-700 delay-400 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <HelpCircle size={32} className="text-[#1a74bb] mb-2" />
-          <h3 className="font-black text-[#231f20] text-xl mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+        <div className={`mt-12 bg-gradient-to-r from-[#3773b6]/8 to-[#3773b6]/4 border border-[#3773b6]/15 rounded-3xl p-8 text-center transition-all duration-700 delay-400 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <HelpCircle size={32} className="text-[#3773b6] mb-2" />
+          <h3 className="font-black text-[#232021] text-xl mb-2">
             Aur koi sawaal hai?
           </h3>
-          <p className="text-[#231f20]/55 text-sm mb-5">Seedha humse baat karein — hum 2 ghante ke andar respond karte hain</p>
+          <p className="text-[#232021]/55 text-sm mb-5">Seedha humse baat karein — hum 2 ghante ke andar respond karte hain</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-green-500 text-white font-bold px-6 py-3 rounded-xl text-sm hover:-translate-y-0.5 hover:bg-green-600 transition-all duration-200 shadow-md shadow-green-500/25">
@@ -109,7 +108,7 @@ export default function FAQSection() {
             </a>
             <button
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              className="flex items-center justify-center gap-2 bg-[#1a74bb] text-white font-bold px-6 py-3 rounded-xl text-sm hover:-translate-y-0.5 hover:bg-[#0d5a96] transition-all duration-200 shadow-md shadow-[#1a74bb]/25">
+              className="flex items-center justify-center gap-2 bg-[#3773b6] text-white font-bold px-6 py-3 rounded-xl text-sm hover:-translate-y-0.5 hover:bg-[#2a5a99] transition-all duration-200 shadow-md shadow-[#3773b6]/25">
               📧 Form Bharo
             </button>
           </div>

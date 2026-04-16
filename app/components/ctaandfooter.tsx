@@ -18,11 +18,11 @@ export function CTASection() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="px-4 py-16 bg-[#f8fafd]">
+    <section className="px-4 py-16 bg-white">
       <div ref={ref} className={`max-w-5xl mx-auto transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div
           className="relative overflow-hidden rounded-3xl p-10 md:p-16 text-center"
-          style={{ background: "linear-gradient(135deg, #0a1628 0%, #1a3a6e 50%, #1a74bb 100%)" }}
+          style={{ background: "linear-gradient(135deg, #0a1628 0%, #1a3a6e 50%, #3773b6 100%)" }}
         >
           {/* BG Pattern */}
           <div className="absolute inset-0 opacity-10"
@@ -41,7 +41,7 @@ export function CTASection() {
               Limited Time Offer
             </span>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4 leading-tight"
-              style={{ fontFamily: "'Playfair Display', serif" }}>
+            >
               Pehli Consultation <br />
               <span style={{ color: "#7ec8f0" }}>Bilkul Free!</span>
             </h2>
@@ -52,7 +52,7 @@ export function CTASection() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-white text-[#1a74bb] font-bold px-10 py-4 rounded-xl text-sm hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200 shadow-2xl shadow-black/20"
+                className="bg-white text-[#3773b6] font-bold px-10 py-4 rounded-xl text-sm hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200 shadow-2xl shadow-black/20"
               >
                 Free Consultation Book Karo →
               </button>
@@ -99,10 +99,9 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-12 h-12 rounded-xl bg-linear-to-br from-[#1a74bb] to-[#0d5a96] flex items-center justify-center font-black text-lg"
-                style={{ fontFamily: "'Playfair Display', serif" }}>NK</div>
+              <div className="w-12 h-12 rounded-xl bg-linear-to-br from-[#3773b6] to-[#2a5a99] flex items-center justify-center font-black text-lg">NK</div>
               <div>
-                <p className="font-black text-lg leading-none" style={{ fontFamily: "'Playfair Display', serif" }}>NK Associates</p>
+                <p className="font-black text-lg leading-none">NK Associates</p>
                 <p className="text-white/40 text-[10px] tracking-widest uppercase mt-0.5">Tax & Compliance</p>
               </div>
             </div>
@@ -125,7 +124,7 @@ export function Footer() {
                 { icon: <MessageCircle size={16} />, label: "Message" },
               ].map((s) => (
                 <button key={s.label} aria-label={s.label}
-                  className="w-9 h-9 rounded-lg bg-white/8 border border-white/10 flex items-center justify-center text-white/50 hover:bg-[#1a74bb] hover:border-[#1a74bb] hover:text-white transition-all duration-200">
+                  className="w-9 h-9 rounded-lg bg-white/8 border border-white/10 flex items-center justify-center text-white/50 hover:bg-[#3773b6] hover:border-[#3773b6] hover:text-white transition-all duration-200">
                   {s.icon}
                 </button>
               ))}
@@ -139,7 +138,7 @@ export function Footer() {
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-white/45 text-sm hover:text-[#1a74bb] transition-colors duration-150">{link}</a>
+                    <a href="#" className="text-white/45 text-sm hover:text-[#3773b6] transition-colors duration-150">{link}</a>
                   </li>
                 ))}
               </ul>

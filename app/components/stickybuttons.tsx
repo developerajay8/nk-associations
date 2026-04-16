@@ -31,7 +31,7 @@ export default function StickyButtons() {
             {/* Call Button */}
             <a
               href="tel:+919999999999"
-              className="flex items-center gap-2.5 bg-[#1a74bb] text-white font-bold px-5 py-3 rounded-full text-sm shadow-lg shadow-[#1a74bb]/40 hover:-translate-y-0.5 transition-all duration-200"
+              className="flex items-center gap-2.5 bg-[#3773b6] text-white font-bold px-5 py-3 rounded-full text-sm shadow-lg shadow-[#3773b6]/40 hover:-translate-y-0.5 transition-all duration-200"
             >
               <Phone size={16} />
               <span>Call Karo</span>
@@ -56,7 +56,7 @@ export default function StickyButtons() {
           onClick={() => setExpanded(!expanded)}
           className={`relative w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl shadow-2xl transition-all duration-300 ${
             expanded
-              ? "bg-[#231f20] rotate-45 shadow-black/30"
+              ? "bg-[#232021] rotate-45 shadow-black/30"
               : "bg-green-500 shadow-green-500/50 pulse-ring"
           }`}
         >
