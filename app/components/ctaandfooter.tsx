@@ -110,13 +110,13 @@ export function Footer() {
             </p>
 
             <div className="space-y-2 text-sm text-white/50">
-              <p className="flex items-center gap-2"><Phone size={14} /> +91 99999 99999</p>
-              <p className="flex items-center gap-2"><Mail size={14} /> info@nkassociates.in</p>
-              <p className="flex items-center gap-2"><MapPin size={14} /> Jodhpur, Rajasthan, India</p>
+              <p className="flex items-center gap-2"><Phone size={14} /> +91 7568820015</p>
+              <p className="flex items-center gap-2"><Mail size={14} /> nkassociates2024@gmail.com</p>
+              <p className="flex items-center gap-2"><MapPin size={14} /> 4th Floor, Sanjay Mainsion, Shri Ramnagar Colony, Dada Gurudev Nagar, Sanganer, Jaipur, Rajasthan 302029</p>
             </div>
 
             {/* Social Icons */}
-            <div className="flex gap-3 mt-6">
+            {/* <div className="flex gap-3 mt-6">
               {[
                 { icon: <Globe size={16} />, label: "Website" },
                 { icon: <Share2 size={16} />, label: "Share" },
@@ -128,7 +128,7 @@ export function Footer() {
                   {s.icon}
                 </button>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Links */}

@@ -102,7 +102,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Google Rating Banner */}
-        <div className={`mt-12 bg-white rounded-3xl border border-[#3773b6]/10 p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm transition-all duration-700 delay-400 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        {/* <div className={`mt-12 bg-white rounded-3xl border border-[#3773b6]/10 p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm transition-all duration-700 delay-400 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <div className="flex items-center gap-5">
             <div className="w-14 h-14 rounded-2xl bg-[#3773b6]/8 flex items-center justify-center text-3xl">🌟</div>
             <div>
@@ -118,7 +118,7 @@ export default function TestimonialsSection() {
           >
             View on Google →
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

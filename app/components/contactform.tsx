@@ -17,7 +17,7 @@ function useInView() {
 const contactInfo = [
   { icon: <Phone size={20} />, label: "Phone / WhatsApp", value: "+91 7568820015",  sub: "Mon–Sat, 9AM–7PM" },
   { icon: <Mail size={20} />, label: "Email", value: "nkassociates2024@gmail.com", sub: "Reply within 2 hours" },
-  { icon: <MapPin size={20} />, label: "Office", value: "Jodhpur, Rajasthan", sub: "By appointment only" },
+  { icon: <MapPin size={20} />, label: "Office", value: "4th Floor, Sanjay Mainsion, Shri Ramnagar Colony, Dada Gurudev Nagar, Sanganer, Jaipur, Rajasthan 302029", sub: "By appointment only" },
 ];
 
 export default function ContactForm() {
